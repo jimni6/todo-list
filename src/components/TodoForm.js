@@ -15,7 +15,7 @@ export const TodoForm = ({addTodo}) => {
             <input type='text' 
                 className='todoInput'
                 value={value}
-                placeholder='Quelle tache souhaitez-vous ajouter?' 
+                placeholder='Votre tâche ici...' 
                 onChange={(e) => setValue(e.target.value)}
             />
             <button type='submit' className='todoButton'>Ajouter</button>
