@@ -1,38 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+body {
+  background: #555c50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #555C50;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todoWrapper {
+  background: #e48e55;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todoForm {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.todoInput {
+  outline: none;
+  background: none;
+  border: 2px solid #555C50;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 600px;
+  color: #555c50;
+}
+
+.todoInput::placeholder {
+  color: #555c5097;
+  font-weight: 600;
+}
+
+.todoButton {
+  background: #555C50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+
+.todo {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #555C50;
+  color: #ffffffdb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.fa-trash {
+  margin-left: 0.75rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.completed {
+  color: #e48e55;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
 }
